@@ -1,17 +1,18 @@
-import { useState } from "react";
-import Example from "./components/heroes-interface/HeroesSection";
-import About from "./components/about/About";
-import HeroesBase from "./components/heroes-interface/InterfaceHeroe";
-import ButtonHeroes from "./components/Button/ButtonHeroes";
+import WorkTogether from "./components/WorkWithUs/WorkWithUs";
+import HeroesBase from "./components/heroes-interface/HeroesSection";
+import Portfolio from "./components/Sections/SectionPortfolio";
 
 function App() {
   return (
     <>
-      <Example />
-      <HeroesBase>
-        <p style={{ color: "red" }}> Hello</p>
-      </HeroesBase>
-      <About />
+      <HeroesBase />
+      <Portfolio
+        backgroundColor="bg-black"
+        width="w-96"
+        height="h-64"
+        marginBottom="mb-52"
+      />
+      <WorkTogether />
     </>
   );
 }

@@ -11,13 +11,20 @@ interface Props {
  *
  * @param children - The contents of the hero component.
  */
-const HeroesBase: React.FC<Props> = ({ children }) => {
+const todefine: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <p>Hello</p>
+      <p
+        style={{
+          display: "flex",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      ></p>
       {children}
     </>
   );
 };
 
-export default HeroesBase;
+export default todefine;

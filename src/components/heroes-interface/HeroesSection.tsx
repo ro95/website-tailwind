@@ -5,13 +5,13 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Accueil", href: "#" },
+  { name: "Portfolio", href: "#" },
+  { name: "À propos", href: "#" },
+  { name: "Contact", href: "#" },
 ];
 
-export default function Example() {
+export default function HeroesBase() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -21,8 +21,8 @@ export default function Example() {
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
         >
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+          <div className="flex lg:flex-initial mr-12">
+            <a href="#" className="-m-1.5 p-4">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
@@ -41,12 +41,12 @@ export default function Example() {
               <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex justify-start lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-xl font-semibold leading-6 text-gray-900"
               >
                 {item.name}
               </a>
@@ -58,7 +58,7 @@ export default function Example() {
               href="#"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Get started
+              Réserver un appel
             </a>
             <a
               href="#"
@@ -142,17 +142,21 @@ export default function Example() {
         <div className="mx-auto max-w-2xl py-32 sm:py-32 lg:py-40">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{" "}
+              {" "}
               <a href="#" className="font-semibold text-indigo-600">
                 <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                En savoir plus<span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Data to enrich your online business
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-10 leading-7">
+              Front end developper
             </h1>
+            <span className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Rodolph LE BLANC
+            </span>
+
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
@@ -163,7 +167,7 @@ export default function Example() {
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get started
+                Réserver un appel
               </a>
               <a
                 href="#"
